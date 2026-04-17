@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'tan-pearl';
+  src: url('../fonts/tan-pearl.otf') format('opentype');
+  font-weight: bolder;
+}
+
+body {
+  font-family: 'tan-pearl', sans-serif;
+  font-weight: 200;
+
+  background: repeating-linear-gradient(
+  to right,
+  #BACDE7 0px,
+  #BACDE7 115px,
+  #ffffff 100px,
+  #ffffff 200px
+ 
+);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  position: relative;
+  background-color: #bacde7;
+  width: 100%;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header p {
+  margin: 10px 0 0;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  width: 150px;
+}
+
+.textos {
+  text-align: center;
+  color: #68111B;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .logo {
+    position: static; 
+    margin-bottom: 10px;
+  }
+}
+
+.sobre {
+  color: #68111B;
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 400;  
+  margin-top: 100px;
+  line-height: 2.0em;
+  background-color: #bacde7; 
+  padding: 60px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.sobre h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+  color: #68111B;
+  
+}
+
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+        grid-template-columns: 1fr;
+      }
+      
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .price {
+      color: #68111B;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #bacde7;
+    }
+
+    
